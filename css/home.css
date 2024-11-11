@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2a414e;
+    padding: 10px 20px;
+    position: relative; /* Ensure that the header is positioned relative */
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Courier New";
+}
+.nav-link:hover {
+    color: rgb(64, 169, 233);
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1; /* Allow nav to take up remaining space */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header nav ul li {
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar {
+    display: flex;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 270px; /* Adjust as needed */
+}
+
+header .search-bar input {
+    padding: 5px;
+}
+
+header .search-bar button {
+    padding: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+header .icons {
+    display: flex;
+    align-items: left;
+    margin-left: 30px;
+    
+}
+
+header .icons a {
+    color: white;
+    font-size: 15px;
+    margin-left: 35px;
+    text-decoration: none;
+}
+
+header .icons a:hover {
+    color: #007BFF;
+}
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust the height as needed */
+    position: relative;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+}
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Adjust text color for better readability */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better contrast */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.text-overlay h1 {
+    font-size: 3em; /* Adjust size as needed */
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 1.2em; /* Adjust size as needed */
+    margin: 10px 0 20px;
+}
+.image-container img {
+    width: 1200px; /* Adjust based on your needs */
+    height: 500px;
+    align-items: left;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+
+footer {
+    background: linear-gradient(108.9deg, rgb(18, 85, 150) 4.9%, rgb(100, 190, 150) 97%);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    height: 400px; /* Fixed height for footer */
+    position: relative;
+}
+
+footer .footer-section {
+    width: 15%;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+footer .footer-section p{
+    font-size: 16px;
+    margin: 20px 20px 0px 20px;
+}
+
+footer .footer-section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #b45fff;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 20px;
+}
+
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    background: #007bff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.container {
+    text-align: center;
+    background-image:url("../images/water.jpg") ;
+    border-radius: 8px;
+    color: rgb(7, 7, 7);
+    width: 100%; /* Adjust width as needed */
+    min-height: 600px; /* Increase this value to your desired height */
+}
+.container h1 p{
+    margin-top: 100px;
+}
+h1 {
+    font-size: 3em;
+    margin: 100;
+}
+p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+.button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #5751d8;
+}

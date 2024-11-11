@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #2a414e;
+    height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Courier New";
+}
+.nav-link:hover {
+    color: rgb(64, 169, 233);
+}
+.logopic {
+    border-radius: 70px;
+    width: 100px;
+    height: auto;
+}
+
+.form-inline {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    margin-left: 1100px;
+    margin-top: -80px;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #02b4c9;
+    color: #0d0d0d;
+    transition: all 0.3s;
+    padding-top: 20px;
+    position: fixed;
+    height: 100vh;
+}
+#sidebar .components {
+    padding: 20px 0;
+}
+#sidebar .components a {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    transition: all 0.3s;
+}
+#sidebar .components a:hover {
+    background: #007bff;
+    text-decoration: none;
+}
+#sidebar .components a.active {
+    background: #007bff;
+    color: #fff;
+}
+#sidebar .components .scroll-link {
+    cursor: pointer;
+}
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#roleList, #userList {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.list-group-item.active {
+    background: #007bff;
+    color: #fff;
+}
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

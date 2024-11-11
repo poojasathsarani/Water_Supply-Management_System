@@ -1,0 +1,179 @@
+body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: white;
+  box-sizing: border-box;
+  background: black;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(0, 31, 54, 0.7);
+  padding: 40px;
+  border-radius: 40px;
+  width: 700px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(83, 215, 255, 0.7);
+  letter-spacing: 1px;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #bbb;
+}
+
+.input-group input,
+.input-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.input-group input:hover,
+.input-group select:hover {
+  border: 1px solid rgb(51, 72, 255);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border: 2px solid rgb(51, 72, 255);
+}
+
+button {
+  display: block;
+  margin: 40px auto 0;
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 46, 83);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(107, 124, 255);
+}
+
+p {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p a {
+  color: rgb(174, 182, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#consumer-fields,
+#technician-fields,
+#serviceprovider-fields {
+  display: none;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  width: 48%;
+}
+
+/* Adjustments to make input fields equal and consistent */
+.container {
+  max-width: 900px; /* Expand container width */
+  padding: 30px;
+}
+
+.form-box {
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the two form columns */
+}
+
+.form-column {
+  flex: 1;
+}
+
+.input-group input, 
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009fdf;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
